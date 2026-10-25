@@ -1,0 +1,20 @@
+# OpenAI AgentKit skill metadata
+# This file declares the skill for packaging and distribution.
+# It complements SKILL.md: SKILL.md carries the runtime instructions,
+# while this file carries the machine-readable metadata used by OpenAI AgentKit.
+
+name: oralenglish-skill
+description: |
+  TEM-4（专四）英语口语思辨陪练 Skill。AI 逐轮抛出英文思辨 Topic 并给出正反参考句型
+  （一句肯定立场、一句否定立场，纯英文），用户口头作答后，AI 原样转写用户英文、
+  生成 1 版适配专四口语的优化句（优先修正中式英语：中文直译语序、中式搭配、逻辑断层、
+  母语负迁移，拒绝浅层同义词替换），并做简短点评；随后提供【继续】（当前话题深度追问）
+  与【重新回答】（同一话题再答一次）两个选项循环训练。纯对话式，不支持网页抓取、PDF、图形界面。
+
+version: 0.1.0
+license: MIT
+metadata:
+  author: "English-skill project"
+  category: language-learning
+  audience: TEM-4 candidates preparing for the oral exam
+  language: zh-CN / en
